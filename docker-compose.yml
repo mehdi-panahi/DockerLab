@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerproxy:
+    image: ${DOCKER_REGISTRY}dockerproxy
+    build:
+      context: .
+      dockerfile: DockerProxy\Dockerfile
